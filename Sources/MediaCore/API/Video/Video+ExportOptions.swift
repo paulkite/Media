@@ -7,7 +7,7 @@
 
 import Photos
 
-#if os(iOS) || os(tvOS)
+#if os(iOS) || os(tvOS) || os(visionOS)
 public typealias VideoExportQualityType = Video.ExportQuality
 #elseif os(macOS)
 public typealias VideoExportQualityType = Video.ExportQualityMac

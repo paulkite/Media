@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 16.01.20.
 //
 
-#if !os(tvOS)
+#if !os(tvOS) && !os(visionOS)
 import AVFoundation
 
 @available(iOS 10, *)

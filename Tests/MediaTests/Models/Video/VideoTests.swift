@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 14.12.19.
 //
 
-#if !os(tvOS)
+#if !os(tvOS) && !os(visionOS)
 import AVFoundation
 @testable import MediaCore
 import Photos

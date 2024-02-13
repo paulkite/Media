@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 28.11.19.
 //
 
-#if canImport(SwiftUI) && !os(macOS)
+#if canImport(SwiftUI) && !os(macOS) && !os(visionOS)
 import AVFoundation
 import AVKit
 import MediaCore

@@ -102,6 +102,7 @@ public extension Video {
     }
 }
 
+@available(visionOS, unavailable)
 public extension Video {
     typealias ResultVideoPropertiesCompletion = (Result<Properties, Swift.Error>) -> Void
 
@@ -134,6 +135,7 @@ public extension Video {
     }
 }
 
+@available(visionOS, unavailable)
 public extension Video {
     typealias ResultAVPlayerItemCompletion = (Result<AVPlayerItem, Swift.Error>) -> Void
     typealias ResultAVAssetCompletion = (Result<AVAsset, Swift.Error>) -> Void

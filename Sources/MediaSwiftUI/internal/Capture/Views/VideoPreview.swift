@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 17.01.20.
 //
 
-#if canImport(UIKit) && !os(tvOS)
+#if canImport(UIKit) && !os(tvOS) && !os(visionOS)
 import AVFoundation
 import SwiftUI
 import UIKit

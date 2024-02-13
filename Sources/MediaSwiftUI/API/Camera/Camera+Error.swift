@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 26.11.19.
 //
 
-#if canImport(SwiftUI) && canImport(UIKit) && !os(tvOS)
+#if canImport(SwiftUI) && canImport(UIKit) && !os(tvOS) && !os(visionOS)
 @available(iOS 13, *)
 extension Camera {
     /// Errors thrown during camera view creation

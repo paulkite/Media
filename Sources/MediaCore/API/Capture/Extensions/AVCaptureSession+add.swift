@@ -10,6 +10,7 @@ import AVFoundation
 @available(iOS 10, *)
 @available(macCatalyst 14, *)
 @available(tvOS, unavailable)
+@available(visionOS, unavailable)
 public extension AVCaptureSession {
     /// Adds the given device as an input to the receiver
     /// if `canAddInput` returns true
@@ -34,6 +35,7 @@ public extension AVCaptureSession {
         addOutput(output)
     }
 
+    @available(visionOS, unavailable)
     /// Adds the default audio device to the receiver
     /// if found
     ///

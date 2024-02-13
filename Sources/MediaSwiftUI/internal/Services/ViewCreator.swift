@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 01.12.19.
 //
 
-#if canImport(SwiftUI) && canImport(UIKit) && !os(tvOS)
+#if canImport(SwiftUI) && canImport(UIKit) && !os(tvOS) && !os(visionOS)
 import MediaCore
 import SwiftUI
 import UIKit

@@ -11,6 +11,7 @@ import AVFoundation
 @available(macOS, unavailable)
 @available(macCatalyst 14, *)
 @available(tvOS, unavailable)
+@available(visionOS, unavailable)
 protocol CaptureProcessor: AVCapturePhotoCaptureDelegate where Self: NSObject {
     var delegate: CaptureProcessorDelegate? { get set }
 }

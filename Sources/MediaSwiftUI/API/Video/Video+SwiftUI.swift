@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 02.12.19.
 //
 
-#if canImport(SwiftUI) && (!os(macOS) || targetEnvironment(macCatalyst))
+#if canImport(SwiftUI) && (!os(macOS) || targetEnvironment(macCatalyst)) && !os(visionOS)
 import Combine
 import MediaCore
 import PhotosUI
@@ -20,7 +20,7 @@ public extension Video {
     }
 }
 
-#if !os(tvOS)
+#if !os(tvOS) && !os(visionOS)
 @available (iOS 13, macOS 10.15, *)
 public extension Video {
     /// Alias for a completion block getting a `Result` containing a `<Media.URL<Video>`

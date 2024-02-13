@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 18.01.20.
 //
 
-#if !os(tvOS)
+#if !os(tvOS) && !os(visionOS)
 import AVFoundation
 
 @available(iOS 10, *)
@@ -37,6 +37,7 @@ public final class Photograph: NSObject {
 
 @available(iOS 10, *)
 @available(macOS, unavailable)
+@available(visionOS, unavailable)
 @available(macCatalyst 14, *)
 public extension Photograph {
     /// Tells the receiver to shoot a photo
@@ -60,6 +61,7 @@ public extension Photograph {
 
 @available(iOS 10, *)
 @available(macOS, unavailable)
+@available(visionOS, unavailable)
 @available(macCatalyst 14, *)
 extension Photograph: CaptureProcessorDelegate {
     func didCapturePhoto(data: Data) {

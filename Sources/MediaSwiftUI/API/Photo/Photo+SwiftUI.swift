@@ -12,7 +12,7 @@ import Photos
 import PhotosUI
 import SwiftUI
 
-#if !os(tvOS)
+#if !os(tvOS) && !os(visionOS)
 @available (iOS 13, macOS 10.15, *)
 public extension Photo {
     typealias ResultPhotoCameraResultCompletion = (Result<Camera.Result, Swift.Error>) -> Void

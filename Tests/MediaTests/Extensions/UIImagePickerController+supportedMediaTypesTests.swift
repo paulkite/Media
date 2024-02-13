@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 17.12.19.
 //
 
-#if canImport(UIKit) && !os(tvOS)
+#if canImport(UIKit) && !os(tvOS) && !os(visionOS)
 @testable import MediaCore
 import XCTest
 import UIKit

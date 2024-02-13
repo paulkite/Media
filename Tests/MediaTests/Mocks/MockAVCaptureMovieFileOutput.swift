@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 04.02.20.
 //
 
-#if !os(tvOS)
+#if !os(tvOS) && !os(visionOS)
 import AVFoundation
 
 final class MockAVCaptureMovieFileOutput: AVCaptureMovieFileOutput {

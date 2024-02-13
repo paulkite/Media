@@ -11,7 +11,7 @@ import MediaCore
 import PhotosUI
 import SwiftUI
 
-#if !os(macOS) && !targetEnvironment(macCatalyst) && !os(tvOS)
+#if !os(macOS) && !targetEnvironment(macCatalyst) && !os(tvOS) && !os(visionOS)
 @available(iOS 13, *)
 public extension LivePhoto {
     /// Creates a ready-to-use `SwiftUI` view for capturing `LivePhoto`s
@@ -45,7 +45,7 @@ public extension LivePhoto {
 }
 #endif
 
-#if !os(macOS) && !os(tvOS)
+#if !os(macOS) && !os(tvOS) && !os(visionOS)
 @available(iOS 13, macOS 10.15, *)
 public extension LivePhoto {
     /// Creates a ready-to-use `SwiftUI` view for browsing `LivePhoto`s in the photo library

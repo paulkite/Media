@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 22.03.20.
 //
 
-#if canImport(UIKit) && !os(tvOS)
+#if canImport(UIKit) && !os(tvOS) && !os(visionOS)
 import UIKit
 
 @available(iOS 13, macOS 10.15, *)

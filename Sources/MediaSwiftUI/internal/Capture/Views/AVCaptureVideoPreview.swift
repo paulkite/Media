@@ -5,7 +5,7 @@
 //  Created by Christian Elies on 17.01.20.
 //
 
-#if canImport(UIKit)
+#if canImport(UIKit) && !os(visionOS)
 import AVFoundation
 import UIKit
 

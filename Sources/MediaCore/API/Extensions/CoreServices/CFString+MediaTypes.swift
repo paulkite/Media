@@ -7,7 +7,7 @@
 
 #if !os(tvOS)
 
-#if os(macOS)
+#if os(macOS) || os(visionOS)
 import CoreServices
 #elseif os(iOS)
 import MobileCoreServices
